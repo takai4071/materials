@@ -42,7 +42,7 @@ SELECT * FROM employee WHERE fieldname1='val1' [AND|OR fieldname2='val2']; -- в
 SELECT * FROM employee [OFFSET 10] LIMIT 5; -- лимит со сдвигом
 SELECT * FROM employee OFFSET 20 FETCH FIRST 5 ROW ONLY; -- выборка строк со сдвигом
 SELECT * FROM employee WHERE gender in ('Female', 'Male'); -- выборка из указанных значений
-SELECT * FROM employee WHERE date_of_birth BETWEEN '2014-01-01' and '2015-01-01'; -- выборка из указанного диапазона значений
+SELECT * FROM employee WHERE date_of_birth BETWEEN '2014-01-01' and '2015-01-01'; -- выборка из указанного диапазона значений. в диапазон также входят нижнее и верхнее значения
 SELECT * FROM employee WHERE email [i]LIKE '%@google.com'; -- выборка по указанному шаблону (если с i, то регистр игнорируется)
 SELECT gender, count(gender) FROM employee GROUP BY gender; -- группировка по gender, подсчёт количества строк на каждое значение gender
 SELECT gender, count(gender) FROM employee GROUP BY gender HAVING count(gender) > 120; -- выбрать строки подходящие по условию HAVING
