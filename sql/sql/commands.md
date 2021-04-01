@@ -48,4 +48,6 @@ SELECT gender, count(gender) FROM employee GROUP BY gender; -- группиро�
 SELECT gender, count(gender) FROM employee GROUP BY gender HAVING count(gender) > 120; -- выбрать строки подходящие по условию HAVING
 SELECT first_name, last_name AS surname, gender AS sex FROM employee LIMIT 10; -- использование алиасов с помощью конструкции AS
 SELECT COALESCE(email, 'not applicable') FROM employee OFFSET 354 LIMIT 7; -- COALESCE заменяет null-значения в колонке email на 'not applicable'
+SELECT CONCAT(first_name, ' - ', gender) [AS new_column] FROM employee limit 7; -- Конкатенация нескольких текстовых значений и возврат полученной строки | с помощью AS возвращаемую строку можно сделать как новую колонку
+SELECT first_name, salary+500 AS salary from employee -- перезапись старой колонки на новую с помощью арифметического оператора "+" и ключевого слова AS
 ```
