@@ -23,8 +23,8 @@ INSERT INTO employee(first_name, last_name, gender, email, date_of_birth) VALUES
 ### DROP
 
 ```sql
-DROP DATABASE db_name; - удалить БД с именем db_name
-DROP TABLE table_name; - удалить таблицу с именем table_name
+DROP DATABASE db_name; -- удалить БД с именем db_name
+DROP TABLE table_name; -- удалить таблицу с именем table_name
 ```
 
 ### SELECT
