@@ -1,3 +1,5 @@
+https://metanit.com/sql/postgresql/2.4.php
+
 ### PRIMARY KEY
 
 ```sql
