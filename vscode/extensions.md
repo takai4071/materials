@@ -1,2 +1,4 @@
 Material Theme\
-Markdown Shortcuts (https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)
+Markdown Shortcuts (https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)\
+vscode-pdf
+
